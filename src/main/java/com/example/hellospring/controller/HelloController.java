@@ -11,33 +11,47 @@ public class HelloController {
         return "home";
     }
 
-    @GetMapping("/detail")
-    public String item(){
-        return "detail";
+//    @GetMapping("/detail")
+//    public String item(){
+//        return "detail";
+//    }
+    @GetMapping("/signup")
+    public String signup(){
+        return "signup";
     }
-    @GetMapping("/signup&in")
-    public String signupin(){
-        return "signupin";
+    @GetMapping("/signin")
+    public String signin(){
+        return "signin";
     }
-    @GetMapping("/pay")
+    @GetMapping("/item")
     public String pay(){
-        return "pay";
+        return "item";
     }
-    @GetMapping("/post")
-    public String itempost(){
-        return "post";
-    }
+//    @GetMapping("/post")
+//    public String itempost(){
+//        return "post";
+//    }
     @GetMapping("/event")
     public String event() {
         return "event";
     }
-    @GetMapping("/pay_ok")
-    public String payok() {
-        return "payok";
-    }
+//    @GetMapping("/pay_ok")
+//    public String payok() {
+//        return "payok";
+//    }
 
     @GetMapping("/home")
     public String loign(){
         return "loginhome";
     }
+    @GetMapping("/mypage")
+    public String mypage(){
+        return "mypage";
+    }
+    @GetMapping("/Cs")
+    public String CS(){
+        return "cs";
+    }
+    @GetMapping("/term")
+    public String term() { return "term"; }
 }
